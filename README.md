@@ -39,10 +39,10 @@ The subgroup of the DHB population being compared, possible values are:
 * "Other" - Other Ethnicity vaccination rate for the DHB area
 
 * "Dep_1_&_2" - Deprivation Index 1 & 2 vaccination rate for the DHB area
-* "Dep_3_&_4" - Deprivation Index 1 & 2 vaccination rate for the DHB area
-* "Dep_5_&_6" - Deprivation Index 1 & 2 vaccination rate for the DHB area
-* "Dep_7_&_8" - Deprivation Index 1 & 2 vaccination rate for the DHB area
-* "Dep_9_&_10" - Deprivation Index 1 & 2 vaccination rate for the DHB area
+* "Dep_3_&_4" - Deprivation Index 3 & 4 vaccination rate for the DHB area
+* "Dep_5_&_6" - Deprivation Index 5 & 6 vaccination rate for the DHB area
+* "Dep_7_&_8" - Deprivation Index 7 & 8 vaccination rate for the DHB area
+* "Dep_9_&_10" - Deprivation Index 9 & 10 vaccination rate for the DHB area
 * "Dep_Unavailable" - Unknown Deprivation Index households vaccination rate for the DHB area
 
 ### breakdown
