@@ -14,6 +14,8 @@ The DHB area. The 23 possible values are "Auckland", "Bay of Plenty", "Canterbur
 
 Otago and Southland were amalgamated into Southern in the time period covered. I have left the data as it is in the original sheets, but if analysing it you may wish to combine the Otago and Southland entries for the same time periods to artificially form Southern.
 
+National entries are the aggregated nation-wide summaries for the group.
+
 ### Population
 
 The number of 6 month olds in the time period of the excel file. If there are less than 10 and more than zero in a subgroup, then the number is suppressed.
