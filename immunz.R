@@ -57,12 +57,12 @@ read_nzim <- function(x){
   by_ethnic4$group <- "Pacific"
   by_ethnic5$group <- "Asian"
   by_ethnic6$group <- "Other"
-  by_deprev1$group <- "Total"
-  by_deprev2$group <- "NZE"
-  by_deprev3$group <- "Maori"
-  by_deprev4$group <- "Pacific"
-  by_deprev5$group <- "Asian"
-  by_deprev6$group <- "Other"
+  by_deprev1$group <- "Dep_1_&_2"
+  by_deprev2$group <- "Dep_3_&_4"
+  by_deprev3$group <- "Dep_5_&_6"
+  by_deprev4$group <- "Dep_7_&_8"
+  by_deprev5$group <- "Dep_9_&_10"
+  by_deprev6$group <- "Dep_Unavailable"
   by_ethnic <- bind_rows(by_ethnic1, by_ethnic2, by_ethnic3, by_ethnic4, by_ethnic5, by_ethnic6)
   by_deprev <- bind_rows(by_deprev1, by_deprev2, by_deprev3, by_deprev4, by_deprev5, by_deprev6)
   by_ethnic$breakdown <- "ethnic"
@@ -88,7 +88,8 @@ imdata <- file_contents %>% separate(report_until, into=c("until_month", "until_
     Population = as.numeric(Population),
     Full_IM = as.numeric(Full_IM),
     Rate = as.numeric(Rate)
-    ) 
+    ) %>% select(-until_month, -until_year) %>%
+  arrange(until_year_n, until_month_n)
 
 write.csv(imdata, file="immunisation_NZ_DHB.csv", row.names=FALSE)
-
+apply(imdata[,c(1,5,6,7,8,9)], 2, unique)
