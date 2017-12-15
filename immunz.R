@@ -90,5 +90,5 @@ imdata <- file_contents %>% separate(report_until, into=c("until_month", "until_
     Rate = as.numeric(Rate)
     ) 
 
-write.csv(imdata, file="immunisation_NZ_DHB", row.names=FALSE)
+write.csv(imdata, file="immunisation_NZ_DHB.csv", row.names=FALSE)
 
